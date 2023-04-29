@@ -9,9 +9,46 @@
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  
+  <!--Buttons for filtering-->
+  <div id="btn-filter">
+    <button id="btn-all">Show All</button>
+    <button id="btn-gry">Gryffindor</button>
+    <button id="btn-rav">Ravenclaw</button>
+    <button id="btn-huf">Hufflepuff</button>
+    <button id="btn-sly">Slytherin</button>
+  </div>
+  <div id="btn-add">
+    <button>Apply!</button>
+  </div>
+  <!--Rendering of the cards will take place here-->
+  <div id="app"></div>
 
 
-  <script src="main.js"></script>
+  <form id="submit-form">
+    <div class="mb-3">
+      <label for="name" class="form-label">First and last name</label>
+      <input type="text" class="form-control" id="name-field">
+    </div>
+    <div class="mb-3">
+      <label for="image" class="form-label">Link for School ID image</label>
+      <input type="text" class="form-control" id="image-field">
+    </div>
+
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="male-radio">
+      <label class="form-check-label" for="flexRadioDefault1">
+        Male
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="female-radio">
+      <label class="form-check-label" for="flexRadioDefault2">
+        Female
+      </label>
+    </div>
+    <button type="submit" id="btn-submit">Submit</button>
+  </form>
+
+  <script type="module" src="main.js"></script>
 </body>
 </html>
