@@ -1,6 +1,8 @@
 import {students} from './data/students.js';
 import {card} from './data/card.js';
-
+import {filterButtons} from './data/buttons.js';
+import {modalStart} from './data/buttons.js';
+import {studentApp} from './data/buttons.js';
 
 //Render function that will display cards based on input
 const renderPage = function (divId, item){
@@ -26,7 +28,7 @@ const displayCards = function (array){
 }
 
 //Calling function to render cards. 
-displayCards(students);
+// displayCards(students);
 
 
 
@@ -55,5 +57,57 @@ const filters = function (event){
 }
 
 
+// Function to add a new student to the roster.
+const newStudent = function (event){
+  event.preventDefault();
+  
+  // If statement that will check for an image link and display a default image based on gender if no link is passed.
+  let image = ''
+  if (document.querySelector('#image-field').value === '' && document.querySelector('input[name= gender-radio]:checked').value === 'male'){
+    image = 'images/avatar-m.png';
+  }
+  else if (document.querySelector('#image-field').value === '' && document.querySelector('input[name= gender-radio]:checked').value === 'female'){
+    image = 'images/avatar-f.png';
+  }
+  else {image = document.querySelector('#image-field').value;}
+  
+  
+  //Logic that will randomize the house assigned on input.
+  const houseArray = ['Gryffindor', 'Ravenclaw', 'Hufflepuff', 'Syltherin'];
+  const randHouse = Math.floor(Math.random() *4);
 
+
+
+  let newObj = {
+    id: students.length +1,
+    name: document.querySelector('#name-field').value,
+    house: houseArray[randHouse],
+    gender: document.querySelector('input[name= gender-radio]:checked').value,
+    avatar: image,
+  }
+
+  students.push(newObj);
+  displayCards(students);
+  document.querySelector('#submit-form').reset();
+  
+}
+console.log(students);
+
+
+
+
+
+const startApp = function (){
+  document.querySelector('#btn-filter').innerHTML = filterButtons;
+  document.querySelector('#form-init').innerHTML = modalStart;
+  document.querySelector('#new-student').innerHTML = studentApp;
+  displayCards(students);
+}
+
+
+startApp();
+
+//Event Listeners
+//Code that will listen for button presses on the filter and form and run the appropriate function.
+document.querySelector('#submit-form').addEventListener('submit', newStudent);
 document.querySelector("#btn-filter").addEventListener('click', filters);
