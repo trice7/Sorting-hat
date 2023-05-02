@@ -5,3 +5,25 @@ body {
 .card{
   width: 500px;
 }
+
+.portrait{
+  height: 250px;
+  width: 175px;
+  border-right: 1px solid black;
+}
+
+.card-header{
+  text-align: center;
+}
+
+.card-title{
+  text-align: center;
+}
+
+.card-text{
+  margin-left: 20px;
+}
+
+.card-btn{
+  margin-left: 20px;
+}
