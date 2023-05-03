@@ -89,3 +89,6 @@ export const students = [
     avatar: 'images/hp-vincent.jpg'
   }
 ]
+
+
+export const deathEaters = [];

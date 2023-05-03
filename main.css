@@ -1,5 +1,13 @@
 body {
-  background-color: aqua;
+  background-image: url('https://tierrasuratherzog.com/wp-content/uploads/2019/05/TS-Wedding-Paper-BG.jpg');
+}
+
+#landing{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
 .card{
@@ -26,4 +34,52 @@ body {
 
 .card-btn{
   margin-left: 20px;
+}
+
+
+#init-btn{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #D9BE9C;
+  font: 8px;
+  border-radius: 8px;
+}
+
+.card-btn{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#land-header{
+  background-image: url('https://media.istockphoto.com/id/161098323/photo/bark-of-cedar-tree-texture-background.jpg?s=612x612&w=0&k=20&c=CDCAzK_Ysm8N9yLjJZZHhJ6nOMsgbyLlF2icQQ3TVaI=');
+  color: white;
+}
+
+.land-card{
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2px 4px;
+  border-radius: 10px;
+}
+
+.init-title{
+  border-bottom: 2px solid white;
+  text-align: center;
+}
+
+
+
+
+
+
+#cheader-Gryffindor{
+  background-color: #ae0001;
+  color: white;
+}
+
+#tile-Gryffindor{
+  /* background-color: #FB0001; */
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/001/948/673/small/black-metal-texture-background-vector.jpg');
+  color: white;
 }
