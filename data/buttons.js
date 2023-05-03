@@ -50,3 +50,18 @@ export const studentApp = `
 </div>
 </div>
 `
+export const landing = `
+<h5 id="land-header" class="card-header">Welcome to Hogwarts!</h5>
+    <div id="init-card" class="card">
+      <img class="card-img" src="https://wallpapers.com/images/featured/0f0g45ihwlijl35w.jpg" alt="Card image">
+      <div class="card-img-overlay">
+        <h5 class='init-title' class="card-title">It's time to get sorted</h5>
+        <p class ='land-card' class="card-text">Each student will be assigned to one of four houses. Please form an orderly line in front of the Sorting Hat. Once sorted we will immediately print your school ID.
+        </p>
+        <p class ='land-card' class="card-text">
+          As an aside, there has been an uptick in Death Eater activity in the area. Students are reminded to immediately head to your dorm once sorted. Your prefects will guide you on rules and expectations.
+        </p>
+        <button id="init-btn">Enter!</button>
+      </div>
+    </div>
+`

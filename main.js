@@ -3,6 +3,9 @@ import {card} from './data/card.js';
 import {filterButtons} from './data/buttons.js';
 import {modalStart} from './data/buttons.js';
 import {studentApp} from './data/buttons.js';
+import {landing} from './data/buttons.js';
+import {deathEaters} from './data/students.js';
+import { badCard } from './data/card.js';
 
 //Render function that will display cards based on input
 const renderPage = function (divId, item){
@@ -25,6 +28,21 @@ const displayCards = function (array){
     domString += card(i);
   }
   return renderPage('#app', domString);
+}
+
+const displayExpelled = function (array){
+  let domString = ``;
+  //Both of these loops work.
+
+  // array.forEach((item) =>{
+  //   domString += card(item);
+  // });
+
+  // Fulfilling the alternate loop condition
+  for (const i of array){
+    domString += badCard(i);
+  }
+  return renderPage('#expelled', domString);
 }
 
 //Calling function to render cards. 
@@ -55,6 +73,7 @@ const filters = function (event){
     displayCards(sly);
   }
 }
+
 
 
 // Function to add a new student to the roster.
@@ -91,23 +110,52 @@ const newStudent = function (event){
   document.querySelector('#submit-form').reset();
   
 }
-console.log(students);
 
+//Function to expel student and convert them to a Death Eater
+const expel = function (e){
 
+  //On clicking the "expel" button the ID is targeted and student is added to the deathEaters array.
+  if (e.target.id.includes('expel')){
+    const [, id] = e.target.id.split('--');
+    const index = students.findIndex(e => e.id === Number(id));
+    const badStudent = students.splice(index, 1);
+    deathEaters.push(...badStudent);
+    
+  }
+
+  if (e.target.id.includes('kill')){
+    const [, id] = e.target.id.split('--');
+    const index = deathEaters.findIndex(e => e.id === Number(id));
+    deathEaters.splice(index, 1);
+    
+  }
+
+  //This loop converts the house to Death Eater.
+  for (let item of deathEaters){
+    item.house = 'Death Eater';
+  }
+  displayCards(students);
+  displayExpelled(deathEaters);
+}
+
+const startup = function (e){
+  renderPage('#landing', landing);
+  renderPage('#new-student', studentApp);
+  document.querySelector('#init-btn').addEventListener('click', startApp);
+}
 
 
 
 const startApp = function (){
-  document.querySelector('#btn-filter').innerHTML = filterButtons;
-  document.querySelector('#form-init').innerHTML = modalStart;
-  document.querySelector('#new-student').innerHTML = studentApp;
+  renderPage('#landing', "");
+  renderPage('#btn-filter', filterButtons);
+  renderPage('#form-init', modalStart);
   displayCards(students);
+  displayExpelled(deathEaters);
+  document.querySelector("#btn-filter").addEventListener('click', filters);
+  document.querySelector('#submit-form').addEventListener('submit', newStudent);
+  document.querySelector('#app').addEventListener('click', expel);
 }
 
 
-startApp();
-
-//Event Listeners
-//Code that will listen for button presses on the filter and form and run the appropriate function.
-document.querySelector('#submit-form').addEventListener('submit', newStudent);
-document.querySelector("#btn-filter").addEventListener('click', filters);
+startup();
