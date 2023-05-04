@@ -5,6 +5,7 @@ export const students = [
     house: 'Gryffindor',
     gender: 'male',
     avatar: 'https://images.ctfassets.net/usf1vwtuqyxm/3SQ3X2km8wkQIsQWa02yOY/8801d7055a3e99dae8e60f54bb4b1db8/HarryPotter_WB_F4_HarryPotterMidshot_Promo_080615_Port.jpg',
+    badge: 'images/grybadge.png',
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ export const students = [
     house: 'Gryffindor',
     gender: 'female',
     avatar: 'https://media.harrypotterfanzone.com/hermione-granger-order-of-the-phoenix-portrait-7.jpg',
+    badge: 'images/grybadge.png',
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ export const students = [
     house: 'Gryffindor',
     gender: 'male',
     avatar: 'https://media.harrypotterfanzone.com/ron-weasley-order-of-the-phoenix-portrait-8.jpg',
+    badge: 'images/grybadge.png',
   },
   {
     id: 4,
@@ -26,6 +29,7 @@ export const students = [
     house: 'Slytherin',
     gender: 'male',
     avatar: 'https://media.harrypotterfanzone.com/draco-malfoy-deathly-hallows-part-2-portrait-1.jpg',
+    badge: 'images/slybadge.png',
   },
   {
     id: 5,
@@ -33,6 +37,7 @@ export const students = [
     house: 'Ravenclaw',
     gender: 'female',
     avatar: 'https://media.harrypotterfanzone.com/luna-lovegood-order-of-the-phoenix-portrait-4.jpg',
+    badge: 'images/ravbadge.png',
   },
   {
     id: 6,
@@ -40,13 +45,15 @@ export const students = [
     house: 'Ravenclaw',
     gender: 'female',
     avatar: 'https://media.harrypotterfanzone.com/cho-chang-order-of-the-phoenix-portrait-3.jpg',
+    badge: 'images/ravbadge.png',
   },
   {
     id: 7,
     name: 'Marcus Belby',
     house: 'Ravenclaw',
     gender: 'male',
-    avatar: 'https://upload.wikimedia.org/wikipedia/en/thumb/6/64/Rob_Knox.jpg/220px-Rob_Knox.jpg'
+    avatar: 'https://upload.wikimedia.org/wikipedia/en/thumb/6/64/Rob_Knox.jpg/220px-Rob_Knox.jpg',
+    badge: 'images/ravbadge.png',
   },
 
   {
@@ -54,7 +61,8 @@ export const students = [
     name: 'Cedric Diggory',
     house: 'Hufflepuff',
     gender: 'male',
-    avatar: 'https://media.harrypotterfanzone.com/cedric-diggory-goblet-of-fire-portrait.jpg'
+    avatar: 'https://media.harrypotterfanzone.com/cedric-diggory-goblet-of-fire-portrait.jpg',
+    badge: 'images/hufbadge.png',
   },
 
   {
@@ -63,6 +71,7 @@ export const students = [
     house: 'Hufflepuff',
     gender: 'female',
     avatar: 'images/hp-hannah.jpg',
+    badge: 'images/hufbadge.png',
   },
 
   {
@@ -71,6 +80,7 @@ export const students = [
     house: 'Hufflepuff',
     gender: 'male',
     avatar: 'images/hp-justin.jpg',
+    badge: 'images/hufbadge.png',
   },
 
   {
@@ -78,7 +88,8 @@ export const students = [
     name: 'Gregory Goyle',
     house: 'Slytherin',
     gender: 'male',
-    avatar: 'images/hp-gregory.jpg'
+    avatar: 'images/hp-gregory.jpg',
+    badge: 'images/slybadge.png',
   },
 
   {
@@ -86,7 +97,8 @@ export const students = [
     name: 'Vincent Crabbe',
     house: 'Slytherin',
     gender: 'male',
-    avatar: 'images/hp-vincent.jpg'
+    avatar: 'images/hp-vincent.jpg',
+    badge: 'images/slybadge.png',
   }
 ]
 

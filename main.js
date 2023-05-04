@@ -14,6 +14,25 @@ const renderPage = function (divId, item){
   
 }
 
+// const badging = function(){
+//   //Conditional statement that will assign the badge.
+  
+//   for (let item of students){
+//     if (item.house === 'Gryffindor'){
+//       item.badge = 'images/grybadge.png'
+//     }
+//     else if(item.house === 'Slytherin'){
+//       item.badge = 'images/slybadge.png'
+//     }
+//     else if (item.house === 'Hufflepuff'){
+//       item.badge = 'images/hufbadge.png'
+//     }
+//     else if (item.house === 'Ravenclaw'){
+//       item.badge === 'images/ravbadge.png'
+//     };
+//   }
+// }
+
 //Initializer. This is what will run to display all cards.
 const displayCards = function (array){
   let domString = ``;
@@ -92,20 +111,38 @@ const newStudent = function (event){
   
   
   //Logic that will randomize the house assigned on input.
-  const houseArray = ['Gryffindor', 'Ravenclaw', 'Hufflepuff', 'Syltherin'];
+  const houseArray = ['Gryffindor', 'Ravenclaw', 'Hufflepuff', 'Slytherin'];
   const randHouse = Math.floor(Math.random() *4);
-
-
-
+  
+  let houseBadge = ''
+  if (houseArray[randHouse] === 'Gryffindor'){
+    houseBadge = 'images/grybadge.png'
+  }
+  else if(houseArray[randHouse] === 'Slytherin'){
+    houseBadge = 'images/slybadge.png'
+  }
+  else if (houseArray[randHouse] === 'Hufflepuff'){
+    houseBadge = 'images/hufbadge.png'
+  }
+  else if (houseArray[randHouse] === 'Ravenclaw'){
+    houseBadge = 'images/ravbadge.png'
+  };
+  
+  
   let newObj = {
     id: students.length +1,
     name: document.querySelector('#name-field').value,
     house: houseArray[randHouse],
     gender: document.querySelector('input[name= gender-radio]:checked').value,
     avatar: image,
+    badge: houseBadge,
   }
 
+  
+  
+  //badging();
   students.push(newObj);
+  displayCards(students);
   displayCards(students);
   document.querySelector('#submit-form').reset();
   
@@ -159,3 +196,5 @@ const startApp = function (){
 
 
 startup();
+
+console.log(students);

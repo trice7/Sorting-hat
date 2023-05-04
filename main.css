@@ -15,11 +15,14 @@ body {
 }
 
 .portrait{
-  height: 250px;
   width: 175px;
   border-right: 1px solid black;
 }
 
+#port-con{
+  height:225px;
+  background-color: black;
+}
 .card-header{
   text-align: center;
 }
@@ -69,8 +72,39 @@ body {
 }
 
 
+#global-tile{
+  /* background-color: #FB0001; */
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/001/948/673/small/black-metal-texture-background-vector.jpg');
+  color: white;
+  height: 225px;
+}
 
 
+
+
+#badge-Gryffindor{
+  width: 125px;
+  position: absolute;
+  right: 22%;
+}
+
+#badge-Slytherin{
+  width: 125px;
+  position: absolute;
+  right: 22%;
+}
+
+#badge-Hufflepuff{
+  width: 125px;
+  position: absolute;
+  right: 22%;
+}
+
+#badge-Ravenclaw{
+  width: 125px;
+  position: absolute;
+  right: 22%;
+}
 
 
 #cheader-Gryffindor{
@@ -78,8 +112,21 @@ body {
   color: white;
 }
 
-#tile-Gryffindor{
-  /* background-color: #FB0001; */
-  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/001/948/673/small/black-metal-texture-background-vector.jpg');
+
+#cheader-Slytherin{
+  background-color: #2a623d;
   color: white;
+}
+
+#cheader-Hufflepuff{
+  background-color: #f0c75e;
+}
+
+#cheader-Ravenclaw{
+  background-color: #222f5b;
+  color: white;
+}
+
+#badge-Ravenclaw{
+  width: 100px;
 }
