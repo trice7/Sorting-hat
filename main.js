@@ -61,7 +61,8 @@ const displayExpelled = function (array){
   for (const i of array){
     domString += badCard(i);
   }
-  return renderPage('#expelled', domString);
+  //return renderPage('#expelled', domString);
+  return renderPage('#wanted-board', domString);
 }
 
 //Calling function to render cards. 
@@ -188,6 +189,8 @@ const startApp = function (){
   renderPage('#landing', "");
   renderPage('#btn-filter', filterButtons);
   renderPage('#form-init', modalStart);
+  renderPage('#display-wanted', '<h2 id="de-banner">WANTED</h2>')
+  renderPage('#expelled', "<div id='wanted-board'></div>")
   displayCards(students);
   displayExpelled(deathEaters);
   document.querySelector("#btn-filter").addEventListener('click', filters);

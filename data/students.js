@@ -103,4 +103,11 @@ export const students = [
 ]
 
 
-export const deathEaters = [];
+export const deathEaters = [
+  {
+    name: 'Voldemort',
+    house: 'Death Eater',
+    gender: 'male',
+    avatar: 'https://qph.cf2.quoracdn.net/main-qimg-80205f9d157debf5dd0bc930db9ecc6b-lq',
+  }
+];
