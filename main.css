@@ -177,7 +177,7 @@ body {
   margin-bottom: 10px;
 }
 
-#expel-student{
+.card-btn{
   background-color: red;
   border-radius: 4px;
 }
