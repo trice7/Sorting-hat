@@ -73,7 +73,6 @@ body {
 
 
 #global-tile{
-  /* background-color: #FB0001; */
   background-image: url('https://static.vecteezy.com/system/resources/thumbnails/001/948/673/small/black-metal-texture-background-vector.jpg');
   color: white;
   height: 225px;
@@ -81,7 +80,7 @@ body {
 
 
 
-
+/* House Specific Styling */
 #badge-Gryffindor{
   width: 125px;
   position: absolute;
@@ -101,9 +100,9 @@ body {
 }
 
 #badge-Ravenclaw{
-  width: 125px;
+  width: 112px;
   position: absolute;
-  right: 22%;
+  right: 24%;
 }
 
 
@@ -112,14 +111,30 @@ body {
   color: white;
 }
 
+#btn-gry{
+  background-color: #ae0001;
+  color: white;
+  border-radius: 5px;
+}
 
 #cheader-Slytherin{
   background-color: #2a623d;
   color: white;
 }
 
+#btn-sly{
+  background-color: #2a623d;
+  color: white;
+  border-radius: 5px;;
+}
+
 #cheader-Hufflepuff{
   background-color: #f0c75e;
+}
+
+#btn-huf{
+  background-color: #f0c75e;
+  border-radius: 5px;
 }
 
 #cheader-Ravenclaw{
@@ -127,6 +142,54 @@ body {
   color: white;
 }
 
-#badge-Ravenclaw{
-  width: 100px;
+#btn-rav{
+  background-color: #222f5b;
+  color: white;
+  border-radius: 5px;
+}
+
+#btn-all{
+  border-radius: 5px;
+  background-color: #bf9872;
+}
+
+#form-init{
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+}
+
+
+
+/* Death Eater card styling */
+
+#de-pic{
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+#de-card{
+  width: 250px;
+  background-image: url('images/wantedposter.png');
+}
+
+#de-text{
+  font-size: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+#de-wanted{
+  text-align: center;
+  padding-top: 5px;
+}
+
+#de-name{
+  text-align: center;
 }

@@ -19,21 +19,13 @@ export const card = function (obj){ return `
 };
 
 export const badCard = function (obj){ return `
-<div class="card mb-3" >
-<div class="card-header">${obj.house}</div>
-<div class="row g-0">
-  <div class="col-md-4">
-    <img src="${obj.avatar}" class='portrait' class="img-fluid rounded-start" alt="...">
+<div id="de-card">
+    <h4 id="de-wanted">Death Eater</h4>
+    <img src="${obj.avatar}" id="de-pic">
+    <h5 id="de-name">${obj.name}</h5>
+    <p id="de-text">Warning! Extremely dangerous. Approach with caution. Individual is wanted by the Ministry of Magic for crimes agains Wizard-kind. If you have any information please consult your nearest Auror immediately.
+    </p>
   </div>
-  <div class="col-md-8">
-    <div class="card-body">
-      <h5 class="card-title">${obj.name}</h5>
-      
-      <button class='card-btn' id="kill--${obj.id}">Eliminate!</button>
-    </div>
-  </div>
-</div>
-</div>
 
 `
 

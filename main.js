@@ -140,9 +140,8 @@ const newStudent = function (event){
 
   
   
-  //badging();
+  
   students.push(newObj);
-  displayCards(students);
   displayCards(students);
   document.querySelector('#submit-form').reset();
   
@@ -160,12 +159,14 @@ const expel = function (e){
     
   }
 
-  if (e.target.id.includes('kill')){
-    const [, id] = e.target.id.split('--');
-    const index = deathEaters.findIndex(e => e.id === Number(id));
-    deathEaters.splice(index, 1);
+  //Unused function to "kill off" death eaters.
+  
+  // if (e.target.id.includes('kill')){
+  //   const [, id] = e.target.id.split('--');
+  //   const index = deathEaters.findIndex(e => e.id === Number(id));
+  //   deathEaters.splice(index, 1);
     
-  }
+  // }
 
   //This loop converts the house to Death Eater.
   for (let item of deathEaters){
