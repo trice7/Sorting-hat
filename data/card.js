@@ -9,7 +9,7 @@ export const card = function (obj){ return `
     <div class="card-body" id='cbody-${obj.house}'>
       <h5 class="card-title">${obj.name}</h5>
       <img src='${obj.badge}'  id='badge-${obj.house}'>
-      <button class='card-btn' id='expel-student' id="expel--${obj.id}">Expel!</button>
+      <button class='card-btn'  id="expel--${obj.id}" id='remove-student'>Expel!</button>
     </div>
   </div>
 </div>
