@@ -1,6 +1,9 @@
 # Site Link
 https://starlit-tulumba-a5ba90.netlify.app/
 
+# Loom Video walkthrough
+https://www.loom.com/share/cf79781aeb2e4ff1b9c7750a1c6cfb71
+
 # Sorting Hat
 
 ## Goals
