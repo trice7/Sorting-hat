@@ -2,6 +2,14 @@ body {
   background-image: url('https://tierrasuratherzog.com/wp-content/uploads/2019/05/TS-Wedding-Paper-BG.jpg');
 }
 
+#app{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+
 #landing{
   position: fixed;
   top: 50%;
@@ -12,6 +20,7 @@ body {
 
 .card{
   width: 500px;
+  margin-right: 40px;
 }
 
 .portrait{
@@ -39,6 +48,13 @@ body {
   margin-left: 20px;
 }
 
+#btn-row{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 
 #init-btn{
   position: absolute;
@@ -58,6 +74,7 @@ body {
 #land-header{
   background-image: url('https://media.istockphoto.com/id/161098323/photo/bark-of-cedar-tree-texture-background.jpg?s=612x612&w=0&k=20&c=CDCAzK_Ysm8N9yLjJZZHhJ6nOMsgbyLlF2icQQ3TVaI=');
   color: white;
+  width: 498.8px;
 }
 
 .land-card{
@@ -157,6 +174,12 @@ body {
   border-radius: 5px;
   display: block;
   width: 100%;
+  margin-bottom: 10px;
+}
+
+#expel-student{
+  background-color: red;
+  border-radius: 4px;
 }
 
 
@@ -176,6 +199,11 @@ body {
 #de-card{
   width: 250px;
   background-image: url('images/wantedposter.png');
+  border: 1px solid black;
+  border-radius: 2px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  margin-left: 5px;
 }
 
 #de-text{
@@ -192,4 +220,26 @@ body {
 
 #de-name{
   text-align: center;
+}
+
+#de-banner{
+  border-bottom: 3px solid black;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+}
+
+
+#wanted-board{
+  background-image: url('https://media.istockphoto.com/id/164517852/vector/close-up-of-cork-board-background.jpg?s=612x612&w=0&k=20&c=kgKQU8hU-yEkRZ8zN-NtsPiSINcPYxgqWINM5I9vya8=');
+  padding-top: 10px;
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+  border: 3px double black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }

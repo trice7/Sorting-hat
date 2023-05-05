@@ -1,9 +1,11 @@
 export const filterButtons = `
-<button id="btn-all">Show All</button>
-<button id="btn-gry">Gryffindor</button>
-<button id="btn-rav">Ravenclaw</button>
-<button id="btn-huf">Hufflepuff</button>
-<button id="btn-sly">Slytherin</button>
+<div id='btn-row'>
+  <button id="btn-all">Show All</button>
+  <button id="btn-gry">Gryffindor</button>
+  <button id="btn-rav">Ravenclaw</button>
+  <button id="btn-huf">Hufflepuff</button>
+  <button id="btn-sly">Slytherin</button>
+</div>
 `
 
 export const modalStart = `
@@ -24,7 +26,7 @@ export const studentApp = `
       <form id="submit-form">
         <div class="mb-3">
           <label for="name" class="form-label">First and last name</label>
-          <input type="text" class="form-control" id="name-field">
+          <input type="text" class="form-control" id="name-field" required>
         </div>
         <div class="mb-3">
           <label for="pic" class="form-label">Link for School ID image</label>
