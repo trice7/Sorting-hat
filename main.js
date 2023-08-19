@@ -14,35 +14,10 @@ const renderPage = function (divId, item){
   
 }
 
-// const badging = function(){
-//   //Conditional statement that will assign the badge.
-  
-//   for (let item of students){
-//     if (item.house === 'Gryffindor'){
-//       item.badge = 'images/grybadge.png'
-//     }
-//     else if(item.house === 'Slytherin'){
-//       item.badge = 'images/slybadge.png'
-//     }
-//     else if (item.house === 'Hufflepuff'){
-//       item.badge = 'images/hufbadge.png'
-//     }
-//     else if (item.house === 'Ravenclaw'){
-//       item.badge === 'images/ravbadge.png'
-//     };
-//   }
-// }
-
 //Initializer. This is what will run to display all cards.
 const displayCards = function (array){
   let domString = ``;
-  //Both of these loops work.
 
-  // array.forEach((item) =>{
-  //   domString += card(item);
-  // });
-
-  // Fulfilling the alternate loop condition
   for (const i of array){
     domString += card(i);
   }
@@ -51,26 +26,16 @@ const displayCards = function (array){
 
 const displayExpelled = function (array){
   let domString = ``;
-  //Both of these loops work.
 
-  // array.forEach((item) =>{
-  //   domString += card(item);
-  // });
-
-  // Fulfilling the alternate loop condition
   for (const i of array){
     domString += badCard(i);
   }
-  //return renderPage('#expelled', domString);
+  
   return renderPage('#wanted-board', domString);
 }
 
-//Calling function to render cards. 
-// displayCards(students);
 
-
-
-//Filter function. I am currently unable to do toLowerCase and still get it to work.
+//Filter function.
 
 const filters = function (event){
   if (event.target.id === 'btn-all'){
@@ -159,15 +124,6 @@ const expel = function (e){
     deathEaters.push(...badStudent);
     
   }
-
-  //Unused function to "kill off" death eaters.
-  
-  // if (e.target.id.includes('kill')){
-  //   const [, id] = e.target.id.split('--');
-  //   const index = deathEaters.findIndex(e => e.id === Number(id));
-  //   deathEaters.splice(index, 1);
-    
-  // }
 
   //This loop converts the house to Death Eater.
   for (let item of deathEaters){
